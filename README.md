@@ -1,1 +1,1 @@
-# Event-based-Camera-Calibration-Using-Vanishing-Points
+# Event-based Camera Calibration Using Vanishing Points
