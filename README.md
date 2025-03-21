@@ -1,7 +1,7 @@
 # Event-based Camera Calibration Using Vanishing Points
 
 ## 📌 Overview
-This repository provides a MATLAB implementation for event-based camera calibration using vanishing points. The method leverages event data processing techniques to efficiently extract vanishing points and optimize camera parameters.
+This repository provides a MATLAB implementation for event-based camera calibration using vanishing points. The method leverages event-driven data processing techniques to efficiently extract vanishing points and optimize camera parameters.
 
 ## 🚀 Features
 - **Automated Vanishing Point Detection** – Robustly detects vanishing points from event data.
@@ -34,6 +34,7 @@ This repository contains several key scripts, each performing a specific functio
 | Script | Description |
 |---------|-------------|
 | `DBSCAN_Dense_Event_Detection.m` | Detects dense event clusters from event data. |
+| `Frame_Reconstruction.m` | Reconstructs frames from event data. |
 | `RANSAC_Cube_Projection_Optimization.m` | Optimizes 3D cube projection using RANSAC. |
 | `Geometric_Line_Intersection_Detection.m` | Identifies geometric line intersections and extracts vanishing points. |
 | `Camera_Calibration_Using_Vanishing_Points.m` | Performs camera calibration using detected vanishing points. |
@@ -45,10 +46,59 @@ run('script_name.m');
 ```
 Refer to inline comments within each script for details on parameters and customization.
 
+## 📌 Calibration Pipeline
+The following diagram illustrates the overall pipeline for event-based camera calibration:
+
+```
++--------------------------------+
+| Load Event Data               |
++--------------------------------+
+           |
+           v
++--------------------------------+
+| Frame Reconstruction          |
++--------------------------------+
+           |
+           v
++--------------------------------+
+| Detect Dense Clusters (DBSCAN) |
++--------------------------------+
+           |
+           v
++--------------------------------+
+| Fit the Prism to Detected Points |
++--------------------------------+
+           |
+           v
++--------------------------------+
+| Optimize 3D Projection (RANSAC) |
++--------------------------------+
+           |
+           v
++--------------------------------+
+| Extract Geometric Lines        |
++--------------------------------+
+           |
+           v
++--------------------------------+
+| Identify Vanishing Points      |
++--------------------------------+
+           |
+           v
++--------------------------------+
+| Visualization & Export         |
++--------------------------------+
+           |
+           v
++--------------------------------+
+| Camera Calibration             |
++--------------------------------+
+```
+
 ## 🐄 Dataset
 A dataset is available for testing and benchmarking the calibration method. Download it from the following link:
 
-📞 [https://drive.google.com/drive/folders/1P11lBoNIk-n40t057sqY-o6jH4SK_ROP?usp=drive_link](#) 
+📞 [https://drive.google.com/drive/folders/1P11lBoNIk-n40t057sqY-o6jH4SK_ROP?usp=sharing](#) 
 
 To use your own dataset:
 1. Place the files inside the `dataset/` folder.
@@ -57,7 +107,7 @@ To use your own dataset:
 ## 🎯 Results
 The repository includes example visualizations of vanishing point detections and calibration outputs. Sample results are available in the `results/` folder.
 
-### Calibration Pipeline
+### Calibration Pipeline Visualization
 A high-level overview of the event-based camera calibration process:
 
 ![Calibration Pipeline](images/calibration_pipeline.png)
@@ -76,6 +126,8 @@ Here is an example output of the calibration process:
 In this project, I contributed to the following:
 
 - **Dense Event Data Detection:** Implemented DBSCAN algorithm to detect dense clusters in event data.
+- **Frame Reconstruction:** Developed a method for reconstructing frames from event data.
+- **Prism Fitting:** Created an approach to fit a prism to detected event clusters.
 - **Optimization of 3D Cube Projection:** Used RANSAC to optimize 3D cube projections and enhance calibration accuracy.
 - **Geometric Line Intersection Detection:** Developed methods to extract vanishing points using geometric line intersections.
 - **Visualization Tools Development:** Created visualization tools for validating detection and calibration results.
@@ -94,6 +146,4 @@ This project is licensed under the MIT License.
 
 ## 💎 Contact
 For questions or support, feel free to reach out via GitHub Issues.
-
-sezgindulkadir@aybu.edu.tr
 
