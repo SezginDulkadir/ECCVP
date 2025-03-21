@@ -34,7 +34,7 @@ This repository contains several key scripts, each performing a specific functio
 | Script | Description |
 |---------|-------------|
 | `DBSCAN_Dense_Event_Detection.m` | Detects dense event clusters from event data. |
-| `Frame_Reconstruction.m` | Reconstructs frames from event data. |
+| `Event_Reconstruction.m` | Reconstructs frames from event data. |
 | `RANSAC_Cube_Projection_Optimization.m` | Optimizes 3D cube projection using RANSAC. |
 | `Geometric_Line_Intersection_Detection.m` | Identifies geometric line intersections and extracts vanishing points. |
 | `Camera_Calibration_Using_Vanishing_Points.m` | Performs camera calibration using detected vanishing points. |
