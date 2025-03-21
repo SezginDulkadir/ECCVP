@@ -115,7 +115,7 @@ A high-level overview of the event-based camera calibration process:
 ### Vanishing Points Detection
 An example visualization of detected vanishing points:
 
-![Vanishing Points](images/vanishing_points_example.png)
+![Vanishing Points](images/box_45°.png)
 
 ### Example Output
 Here is an example output of the calibration process:
