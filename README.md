@@ -110,7 +110,7 @@ The repository includes example visualizations of vanishing point detections and
 ### Calibration Pipeline Visualization
 A high-level overview of the event-based camera calibration process:
 
-![Calibration Pipeline](images/calibration_pipeline.png)
+![Calibration Pipeline](Results/flowchart.png)
 
 ### Raw Events Visualization
 The visual of detecting corner points by prism fitting the image created by reconstructing event data is as follows:
