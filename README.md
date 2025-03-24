@@ -115,7 +115,7 @@ A high-level overview of the event-based camera calibration process:
 ### Raw Events Visualization
 The visual of detecting corner points by prism fitting the image created by reconstructing event data is as follows:
 
-![Raw Events](Results/experimental_setup.png)
+![Raw Events](Results/blinking_led_35_raw_events.png)
 
 ### Vanishing Points Detection
 An example visualization of detected vanishing points:
