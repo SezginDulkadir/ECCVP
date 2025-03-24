@@ -98,7 +98,7 @@ The following diagram illustrates the overall pipeline for event-based camera ca
 ## 🐄 Dataset
 A dataset is available for testing and benchmarking the calibration method. Download it from the following link:
 
-📞 [https://drive.google.com/drive/folders/1P11lBoNIk-n40t057sqY-o6jH4SK_ROP?usp=drive_link](#) 
+[Dataset](https://drive.google.com/drive/folders/1P11lBoNIk-n40t057sqY-o6jH4SK_ROP?usp=drive_link)
 
 To use your own dataset:
 1. Place the files inside the `dataset/` folder.
