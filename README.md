@@ -50,50 +50,50 @@ Refer to inline comments within each script for details on parameters and custom
 The following diagram illustrates the overall pipeline for event-based camera calibration:
 
 ```
-+--------------------------------+
-| Load Event Data               |
-+--------------------------------+
-           |
-           v
-+--------------------------------+
-| Frame Reconstruction          |
-+--------------------------------+
-           |
-           v
-+--------------------------------+
-| Detect Dense Clusters (DBSCAN) |
-+--------------------------------+
-           |
-           v
-+--------------------------------+
-| Fit the Prism to Detected Points |
-+--------------------------------+
-           |
-           v
-+--------------------------------+
-| Optimize 3D Projection (RANSAC) |
-+--------------------------------+
-           |
-           v
-+--------------------------------+
-| Extract Geometric Lines        |
-+--------------------------------+
-           |
-           v
-+--------------------------------+
-| Identify Vanishing Points      |
-+--------------------------------+
-           |
-           v
-+--------------------------------+
-| Visualization & Export         |
-+--------------------------------+
-           |
-           v
-+--------------------------------+
-| Camera Calibration             |
-+--------------------------------+
-```
+%+--------------------------------+
+%| Load Event Data               |
+%+--------------------------------+
+%           |
+%           v
+%+--------------------------------+
+%| Frame Reconstruction          |
+%+--------------------------------+
+%           |
+%           v
+%+--------------------------------+
+%| Detect Dense Clusters (DBSCAN) |
+%+--------------------------------+
+%           |
+%           v
+%+--------------------------------+
+%| Fit the Prism to Detected Points |
+%+--------------------------------+
+%           |
+%           v
+%+--------------------------------+
+%| Optimize 3D Projection (RANSAC) |
+%+--------------------------------+
+%           |
+%           v
+%+--------------------------------+
+%| Extract Geometric Lines        |
+%+--------------------------------+
+%           |
+%           v
+%+--------------------------------+
+%| Identify Vanishing Points      |
+%+--------------------------------+
+%           |
+%           v
+%+--------------------------------+
+%| Visualization & Export         |
+%+--------------------------------+
+%           |
+%           v
+%+--------------------------------+
+%| Camera Calibration             |
+%+--------------------------------+
+%```
 
 ## 🐄 Dataset
 A dataset is available for testing and benchmarking the calibration method. Download it from the following link:
