@@ -1,7 +1,7 @@
 # Event-based Camera Calibration Using Vanishing Points
 
 ## 📌 Overview
-This repository provides a MATLAB implementation for event-based camera calibration using vanishing points. The method leverages event-driven data processing techniques to efficiently extract vanishing points and optimize camera parameters.
+This repository provides a MATLAB implementation for event-based camera calibration using vanishing points. The method leverages event data processing techniques to efficiently extract vanishing points and optimize camera parameters.
 
 ## 🚀 Features
 - **Automated Vanishing Point Detection** – Robustly detects vanishing points from event data.
@@ -49,51 +49,7 @@ Refer to inline comments within each script for details on parameters and custom
 ## 📌 Calibration Pipeline
 The following diagram illustrates the overall pipeline for event-based camera calibration:
 
-```
-%+--------------------------------+
-%| Load Event Data               |
-%+--------------------------------+
-%           |
-%           v
-%+--------------------------------+
-%| Frame Reconstruction          |
-%+--------------------------------+
-%           |
-%           v
-%+--------------------------------+
-%| Detect Dense Clusters (DBSCAN) |
-%+--------------------------------+
-%           |
-%           v
-%+--------------------------------+
-%| Fit the Prism to Detected Points |
-%+--------------------------------+
-%           |
-%           v
-%+--------------------------------+
-%| Optimize 3D Projection (RANSAC) |
-%+--------------------------------+
-%           |
-%           v
-%+--------------------------------+
-%| Extract Geometric Lines        |
-%+--------------------------------+
-%           |
-%           v
-%+--------------------------------+
-%| Identify Vanishing Points      |
-%+--------------------------------+
-%           |
-%           v
-%+--------------------------------+
-%| Visualization & Export         |
-%+--------------------------------+
-%           |
-%           v
-%+--------------------------------+
-%| Camera Calibration             |
-%+--------------------------------+
-%```
+![Calibration Pipeline](Results/flowchart.png)
 
 ## 🐄 Dataset
 A dataset is available for testing and benchmarking the calibration method. Download it from the following link:
@@ -104,14 +60,6 @@ To use your own dataset:
 1. Place the files inside the `dataset/` folder.
 2. Update the configuration settings accordingly.
 
-## 🎯 Results
-The repository includes example visualizations of vanishing point detections and calibration outputs. Sample results are available in the `results/` folder.
-
-### Calibration Pipeline Visualization
-A high-level overview of the event-based camera calibration process:
-
-![Calibration Pipeline](Results/flowchart.png)
-
 ### Raw Events Visualization
 The visual of detecting corner points by prism fitting the image created by reconstructing event data is as follows:
 
@@ -121,7 +69,6 @@ The visual of detecting corner points by prism fitting the image created by reco
 An example visualization of detected vanishing points:
 
 ![Vanishing Points](Images/cube_45.png)
-
 
 ## 🤝 My Contributions
 In this project, I contributed to the following:
@@ -141,6 +88,9 @@ Contributions are welcome! To contribute:
 4. Open a pull request (PR).
 
 For major changes, please open an issue first to discuss your ideas.
+
+## 🎯 Results
+The repository includes example visualizations of vanishing point detections and calibration outputs. Sample results are available in the `results/` folder.
 
 ## 📝 License
 This project is licensed under the MIT License.
