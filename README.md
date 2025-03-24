@@ -94,6 +94,10 @@ The following diagram illustrates the overall pipeline for event-based camera ca
 | Camera Calibration             |
 +--------------------------------+
 ```
+### Experimental Setup
+Here is an experimental setup of the calibration process:
+
+![Experimental Setup](Results/experimental_setup.png)
 
 ## 🐄 Dataset
 A dataset is available for testing and benchmarking the calibration method. Download it from the following link:
@@ -117,10 +121,6 @@ An example visualization of detected vanishing points:
 
 ![Vanishing Points](Images/cube_45.png)
 
-### Example Output
-Here is an example output of the calibration process:
-
-![Example Output](images/example_output.png)
 
 ## 🤝 My Contributions
 In this project, I contributed to the following:
