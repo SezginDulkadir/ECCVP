@@ -94,10 +94,6 @@ The following diagram illustrates the overall pipeline for event-based camera ca
 | Camera Calibration             |
 +--------------------------------+
 ```
-### Experimental Setup
-Here is an experimental setup of the calibration process:
-
-![Experimental Setup](Results/experimental_setup.png)
 
 ## 🐄 Dataset
 A dataset is available for testing and benchmarking the calibration method. Download it from the following link:
@@ -115,6 +111,11 @@ The repository includes example visualizations of vanishing point detections and
 A high-level overview of the event-based camera calibration process:
 
 ![Calibration Pipeline](images/calibration_pipeline.png)
+
+### Raw Events Visualization
+The visual of detecting corner points by prism fitting the image created by reconstructing event data is as follows:
+
+![Raw Events](Results/experimental_setup.png)
 
 ### Vanishing Points Detection
 An example visualization of detected vanishing points:
