@@ -3,6 +3,8 @@
 ## 📌 Overview
 This repository provides a MATLAB implementation for event-based camera calibration using vanishing points. The method leverages event data processing techniques to efficiently extract vanishing points and optimize camera parameters.
 
+![Detecting Corner Points from Reconstructed Frames of Prismatic Objects](Results/Detecting Corner Points from Reconstructed Frames of Prismatic Objects.png)
+
 ## 🚀 Features
 - **Automated Vanishing Point Detection** – Robustly detects vanishing points from event data.
 - **MATLAB-Based Implementation** – Easily integrates with MATLAB’s powerful toolboxes.
